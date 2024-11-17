@@ -24,35 +24,30 @@ Ensure you have the following tools installed:
 
 ## Installation
 
-Clone the repository:
+### Clone the repository
+
+
 git clone https://github.com/zeusvlun/zeusgaza.git
 cd zeusgaza
-Make the script executable:
+
+## Make the script executable:
 chmod +x zeusgaza.sh
 Usage
 Run the script with your target domain:
 ./zeusgaza.sh -u example.com
-Options
--u <URL>: Specify the target domain to scan.
--h: Display help information.
-What Does the Script Do?
-WhatWeb: Identifies the technologies and services running on the target website.
-Subfinder and Sublist3r: Discovers subdomains related to the target domain.
-Waybackurls: Retrieves historical snapshots of the website from the Wayback Machine.
-Katana: Crawls through the discovered subdomains to gather additional URLs.
-Hakrawler: Searches for additional URLs and resources using various methods.
-httpx: Validates URLs and checks their status codes (e.g., 200, 403) to determine their accessibility.
-Results
-The script saves the results of each tool in separate files:
 
+## What Does the Script Do?
+- WhatWeb: Identifies the technologies and services running on the target website.
+- Subfinder and Sublist3r: Discovers subdomains related to the target domain.
+- aybackurls: Retrieves historical snapshots of the website from the Wayback Machine.
+- Katana: Crawls through the discovered subdomains to gather additional URLs.
+
+## The script saves the results of each tool in separate files:
 WhatWeb Results: saved as whatweb_results_<domain>.txt
 Subfinder Results: saved as subfinder_results_<domain>.txt
 Sublist3r Results: saved as sublist3r_results_<domain>.txt
 Waybackurls Results: saved as waybackurls_results_<domain>.txt
 Katana Results: saved as katana_results_<domain>.txt
-Hakrawler Results: saved as hakrawler_results_<domain>.txt
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Acknowledgments
 Thanks to the authors of the tools used: Subfinder, Sublist3r, Waybackurls, Katana, WhatWeb
